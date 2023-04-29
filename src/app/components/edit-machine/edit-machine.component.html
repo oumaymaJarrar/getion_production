@@ -1,0 +1,121 @@
+<app-navbar></app-navbar>
+<script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!--Ajouter un employé-->
+<div class="tables">
+
+    <!-- début le formulaire de création de machine -->
+        <form #f="ngForm" (ngSubmit)="updateMachine(f)">
+                <div class="ajoutmachine">
+                    <h2>Modifier <span id="machine">Une Machine</span></h2>
+                    <table>
+                        <tr class="line">
+                            <!-- le champ pour l'identifiant de la machine -->
+                        <td>
+                                <h3 class="line1">Id</h3>
+                            </td>
+                            <td>
+                                <div class="champ">
+                                    <input type="number" name="id" id="id" [(ngModel)]="m.id"> 
+                                    <label><i class="fas fa-solid fa-id-badge"></i></label>
+                                </div>
+                            </td>
+                            <td>
+                            <!-- le champ pour nom  de la machine -->
+                                <h3 class="line2">Nom</h3>
+                            </td>
+                            <td>
+                                <div class="champ">
+                                    <input type="text" name="nom_machine" id="nom_mach" [(ngModel)]="m.nom_machine"> 
+                                    <label><i class="fas fa-id-card"></i></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="line">
+                            <td>
+                            <!-- le champ pour MTBF de la machine -->
+                                <h3 class="line1">MTBF</h3>
+                            </td>
+                            <td>
+                                <div class="champ">
+                                    <input type="text" name="MTBF" id="mtbf" disabled ngModel>
+                                </div>
+                            </td>
+        
+                            <td>
+                            <!-- le champ pour MTTR de la machine -->
+                                <h3 class="line2">MTTR</h3>
+                            </td>
+                            <td>
+                                <div class="champ">
+                                    <input type="text" name="MTTR" id="mttr" disabled ngModel>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="line">
+                            <td>
+                            <!-- le champ pour le prix d'achat  de la machine -->
+                                <h3 class="line1">Prix Achat</h3>
+                            </td>
+                            <td>
+                                <div class="champ">
+                                    <input type="number" name="prix_achat" id="prixachat" [(ngModel)]="m.prix_achat">
+                                </div>
+                            </td>
+                    
+                            <td>
+                            <!-- le champ pour la date d'achat de la machine -->
+                                <h3 class="line2">Date D'Achat</h3>
+                            </td>
+                            <td>
+                                <div class="champ">
+                                <input type="date" name="date_achat" id="dtachat" [(ngModel)]="m.date_achat">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr  class="line"> 
+                            <td>
+                            <!-- champ pour la capacité de la machine -->
+                                <h3 class="line1">Capacité</h3>
+                            </td>
+                            <td>
+                                <div class="champ">
+                                    <input type="text" name="capacite" id="capacite" placeholder="nombre d'heure par semaine" [(ngModel)]="m.capacite">
+                                </div>
+                            </td>
+                            <td>
+                            <!-- champ pour la description de la machine -->
+                                <h3 class="line2">Description</h3>
+                            </td>
+                            <td>
+                                <div class="champ">
+                                    <textarea  name="description" id="description" rows="4" cols="37" [(ngModel)]="m.description"></textarea>
+                                </div>
+                            </td>
+                        </tr>
+                                                                                       
+                    </table>
+                                 
+                    <div class="btnconfannuler" >                                   
+                        <button class="button-82-pushable"    id="btnc" type="submit">
+                            <span class="button-82-shadow"></span>
+                            <span class="button-82-edgec"></span>
+                            <span class="button-82-frontc text ">
+                                <span class="fa fa-solid fa-plus"></span>
+                            Modifier
+                            </span>
+                        </button>
+
+                        <a  href="" class="btnannuler"  id="btna">
+                            <span class="button-annuler-82-shadow"></span>
+                            <span class="button-82-edgea"></span>
+                            <span class="button-82-fronta text ">
+                                <span class="fa fa-solid fa-ban"></span>
+                            Annuler
+                            </span>
+                        </a>                   
+                    </div>
+                </div>
+            </form>
+        </div>

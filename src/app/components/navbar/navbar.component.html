@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+<body>
+    <nav class="menu" tabindex="0">
+        <div class="smartphone-menu-trigger"></div>
+      <header class="avatar">
+            <img src="../../assets/images/avatar.png" />
+        <h2>Oumayma</h2>
+      </header>
+        <ul>
+        <li tabindex="0" routerLink="/machine"><span><i class="fas fa-sliders" ></i>   Gestion des machines</span></li>
+        <li tabindex="0" routerLink="/produit"><span><i class="fas fa-box-full"></i>Gestion des produits</span></li>
+        <li tabindex="0" ><span><i class="fas fa-location"></i> Emplacement machines</span></li>
+        <li tabindex="0"routerLink="/addAtelier"><span><i class="fas fa-house-damage"></i> Atelier</span></li>
+        <li tabindex="0"><span><i class="fas fa-question-circle"></i> Aide</span></li>
+        <li tabindex="0"><span><i class="fas fa-gears"></i>Settings</span></li>
+        <button mat-raised-button class="btnlogout" (click)="logout()"><i class="fas fa-unlock"></i> Déconnexion</button>
+      </ul>
+    </nav> 
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Authentification_creation</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Authentification_creation">
+            <form  #f="ngForm" (ngSubmit)="onsubmit(f)"  id="authentification">
+                <h2 class="title">S'identifier</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="email" ngModel placeholder="Email de l'utilisateur" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" ngModel name="password" placeholder="Mot de passe" required>
+                </div>
+                <p class="account-text">vous n'avez pas un compte !? <a routerLink="/create" id="creat-btn2">créer un compte</a></p>
+                <input type="submit" routerLink="/produit" value="Connexion" class="btn">
+            </form>
+
+
+        </div>
+        <div class="panels-container">
+            <div class="panel">
+                <img src="../../assets/images/authentification.svg" alt=""  id="create">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

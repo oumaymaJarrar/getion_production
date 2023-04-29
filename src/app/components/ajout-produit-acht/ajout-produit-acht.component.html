@@ -1,0 +1,54 @@
+
+<app-navbar></app-navbar>
+<link rel="stylesheet" href="">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+
+<div class="tablesformproduitconstrui">
+	<form #f="ngForm" (ngSubmit)="save(f)">
+	
+		<div class="ajoutProduitAch">
+			
+			<h2 class="titreProduitConst">Ajouter <span id="emp">un produit achetable</span></h2>
+			<table class="formProduitConst">
+				<tr>
+					<td class="txtProduitConst">
+						<h3 class="formtxt" id="nomproduit">Nom de produit</h3>
+					</td>
+					<td>
+						<div class="champProduitConstruisable">
+								<input type="text" ngModel name="nom_produit">
+								<label><i class="fas fa-box"></i></label>
+						</div>
+					</td>
+					
+				</tr>
+				
+				
+			</table>
+			<div class="btnProduitAchetable">
+				<div>
+					<button class="buttonpointeff"  id="btncpointeff" type="submit">
+						<span class="button-82-edgec"></span>
+						<span class="button-82-frontc text ">
+							<span class="fa fa-solid fa-plus"></span>
+						Ajouter
+						</span>
+					</button>
+				</div>
+				<div>
+					<a href=""  class="buttonpointeff" role="button"  id="btnapointeff">
+						<span class="button-82-edgea"></span>
+						<span class="button-82-fronta text ">
+							<span class="fa fa-solid fa-ban"></span>
+						Annuler
+						</span>
+					</a>
+				</div>
+		  </div>
+		</div>
+	</form>
+</div>
+
+

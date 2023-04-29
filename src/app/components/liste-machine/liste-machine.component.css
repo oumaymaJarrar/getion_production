@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/*crud pointage a effectue*/
+
+.crudpointaeff {
+    margin-left: 161px;
+    width: 100%;
+}
+
+
+/*crud pointage effectué*/
+
+
+.container{
+    background-color: #fffdfd;
+    margin-left: 200px;
+width: calc(100%-300px);    
+height: 100%;
+}
+/*crud pointage a effectue*/
+
+
+
+/*crud pointage effectué*/
+
+.crudpoineff {
+    width: 100%;
+    padding-top: 20px;
+    margin-left: 50px;
+}
+
+/*crud employe*/
+
+.crudemp {
+    width: 90%;    
+    padding-top: 20px;
+    margin-left: 50px;
+}
+
+.colmach {
+    margin-left: 285px;
+}
+
+.colemp {
+    margin-left: 325px;
+}
+
+
+/*titre de la liste*/
+
+.listetitle {
+    font-size: 35px;
+}
+
+
+/*les icones de la liste*/
+
+
+.formdeleteall {
+    margin-top: -32px;
+    margin-left: 127px;
+}
+
+.edit i,
+.eye i,
+.addnote i,
+.delete i {
+    color: white;
+}
+
+.edit {
+    background: #7891a5;
+    font-size: 14px;
+    border-radius: 100px;
+    width: 40px;
+    margin-left: 5px;
+}
+
+.eye {
+    background: #4f88bb;
+    font-size: 14px;
+    border-radius: 100px;
+    width: 40px;
+    margin-left: 5px;
+}
+.delete {
+    background: #ea6579;
+    font-size: 14px;
+    border-radius: 100px;
+    width: 40px;
+    margin-left: 5px;
+}
+
+#titledelete {
+    background: #d54a58;
+    color: white;
+    font-size: 17px;
+    margin-left: 15px;
+}
+
+#addempbtn {
+    background: #317ec1;
+    color: white;
+    font-size: 17px;
+    margin-left: -315px;
+}
+
+.btnreg {
+    margin-left: 242px;
+}
+
+
+/*les champs input qui se trouve dans le crud*/
+
+.champlist input,
+select {
+    width: 100%;
+    min-width: 220px;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 16px;
+    background: #fff;
+    /*margin-left: 5px;*/
+    border: #070002 solid 1px;
+}
+
+.champlistpa select {
+    width: 280px;
+    min-width: 220px;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 16px;
+    background: #fff;
+    /*margin-left: 5px;*/
+    border: #070002 solid 1px;
+    margin-right: 80px;
+}
+
+td {
+    padding-left: 30px;
+}
+
+
+/*formulaire qui contient les données qui vous l'entrés pour affichés la liste qui lui convient*/
+
+.formpointaeff {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+/*les deux liste qui se trouve dans pointage a effectué*/
+
+.tables {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid: 20px;
+}
+.table{
+    text-align: center;
+}
+th{
+    text-align: center;
+}
+.tablejour {
+    width: 500px
+}
+
+.titretable {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.table tbody tr:hover {
+    background: #fff;
+}
+
+.produiachetable {
+    margin-top: 150px;
+}
+
+.tablelocMachine {
+    width: 80%;
+    margin-left: 100px;
+}
+
+.tabProduitAchet {
+    width: 60%;
+    margin-left: 220px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 9.5fr 5fr;
+    grid: 20px;
+}
+
+
+/*choix de service pour afficher liste des bureaux que lui convient*/
+
+.rowlocmachine {
+    display: grid;
+    grid-template-columns: 5fr 4fr 4fr 4fr;
+    grid: 20px;
+}
+
+.rowProduit {
+    display: grid;
+    grid-template-columns: 12fr 4fr;
+    grid: 20px;
+}
+
+#selectmachine {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#btncrudemp {
+    margin-top: 20px;
+}
+
+.champlistloc {
+    width: 150px;
+    padding-left: 5px;
+}
+
+
+
+.rowbtn {
+    display: grid;
+    grid-template-columns: 8.5fr 7fr;
+    grid: 20px;
+}
+
+#ligneselect {
+    margin-left: -30px;
+}
+
+.button-22 {
+    align-items: center;
+    /* appearance: button; */
+    /* background-color: #852747; */
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+    box-sizing: border-box;
+    color: #7c2441;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    line-height: 1.15;
+    margin-left: -20px;
+    margin-top: -5px;
+    padding: 10px 21px;
+    text-align: center;
+    text-transform: none;
+    width: 218px;
+    text-decoration: none;
+}
+
+.button-22:hover {
+    color: #6b1d37;
+    text-decoration: underline;
+}
+
+.deletejour {
+    margin-left: 44px;
+    margin-top: -60px;
+}
+
+
+/**responsive*/
+
+@media(max-width:800px) {
+    .table td:nth-child(1) {
+        display: none;
+    }
+    .table th:nth-child(1) {
+        display: none;
+    }
+    .crud {
+        margin-left: 100px;
+    }
+}
+
+@media(max-width:1000px) {
+    .table td:nth-child(6) {
+        display: none;
+    }
+    .table th:nth-child(6) {
+        display: none;
+    }
+}
+
+@media(max-width:600px) {
+    .table td:nth-child(5),
+    .table th:nth-child(5) {
+        display: none;
+    }
+    .crud {
+        margin-left: 20px;
+    }
+}

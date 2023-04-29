@@ -1,0 +1,85 @@
+<app-navbar></app-navbar>
+<div class="tablesformLocMachine">
+	<form #f="ngForm" (ngSubmit)="save(f)">
+		
+		<div class="ajoutLocMachine">
+			
+			<h2 class="titrejour">Ajouter <span id="emp">Un Atelier</span></h2>
+			<table class="formLocMachine">
+				<tr>
+					<td class="txtloc">
+						<h3 class="formtxt" >Nom de la machine</h3>
+					</td>
+					<td>
+						<div class="champLocM">
+							<select name="id_machine" class="nom_machine" id="nommachineselect">
+								<option selected>--choisir la machine--</option>
+															
+								<option value=""></option>
+								
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="txtloc">
+						<h3 class="formtxt">L'emplacement</h3>
+					</td>
+					<td>
+						<div class="champLocM" id="emp_machine">
+							<select name="emp_machine" class="emplacement">
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="txtloc">
+						<h3 class="formtxt">Designation de l'atelier</h3>
+					</td>
+					<td>
+						<div class="champLocM">
+							<input type="text" name="des_atelier" ngModel>
+							<label><i class="fas fa-city"></i></label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="txtloc">
+						<h3 class="formtxt">Adresse</h3>
+					</td>
+					<td>
+						<div class="champLocM">
+						<textarea id="adr_atelier" name="adr_atelier" rows="4" cols="33" ngModel></textarea>
+						</div>
+					</td>
+				</tr>
+			</table>
+					
+			
+			<div class="btnLocMachine">
+				<div>
+					<button class="buttonLocMachine"  type="submit"  id="btncLocM">
+						<span class="button-82-shadow"></span>
+						<span class="button-82-edgec"></span>
+						<span class="button-82-frontc text ">
+							<span class="fa fa-solid fa-plus"></span>
+						Ajouter
+						</span>
+					</button>
+				</div>
+				<div>
+				
+					<a href="" class="buttonLocMachine" id="btnaLocM">
+						<span class="button-82-shadow"></span>
+						<span class="button-82-edgea"></span>
+						<span class="button-82-fronta text ">
+							<span class="fa fa-solid fa-ban"></span>
+							Annuler
+						</span>
+					</a>
+
+				</div>
+		  </div>
+		</div>
+	</form>
+</div>

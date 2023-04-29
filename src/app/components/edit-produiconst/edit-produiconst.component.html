@@ -1,0 +1,101 @@
+<app-navbar></app-navbar>
+<link rel="stylesheet" href="">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+
+
+<div class="tablesformproduitconstrui">
+	<form #f="ngForm" (ngSubmit)="updateProduit(f)">
+		
+		<div class="ajoutProduitCon">
+			
+			<h2 class="titreProduitConst">Modifier <span id="emp">un produit construisable</span></h2>
+			<table class="formProduitConst">
+				<tr class="line1">
+					<td class="txtProduitConst">
+						<h3 class="formtxt" id="nomproduit">Nom de produit</h3>
+					</td>
+					<td>
+						<div class="champProduitConstruisable">
+								<input type="text" [(ngModel)]="p.nom_produit_const" name="nom_produit_const" >
+								<label><i class="fas fa-box"></i></label>
+
+						</div>
+					</td>
+					<td class="">
+						<h3 class="formtxt" id="nomproduit">Type de produit</h3>
+					</td>
+					<td>
+						<div class="champProduitConstruisable">
+							<select name="type_produit" id="" [(ngModel)]="p.type_produit">
+								<option value="">--type de produit--</option>
+                                <option value="Sous_produit">Sous produit</option>
+								<option value="Produit fini">Produit fini</option>
+							</select>
+						</div>
+					</td>
+					
+				</tr>
+				
+				<tr class="line2">
+					<td class="line2">
+						<h3 class="formtxt" id="codebarre">Code à barre</h3>
+					</td>
+					<td>
+						<div class="champProduitConstruisable">
+							<input type="text" name="code_barre" [(ngModel)]="p.code_barre">
+							<label><i class="fas fa-barcode-read"></i></label>
+
+						</div>
+					</td>
+					<td class="line2">
+						<h3 class="formtxt" id="">Lot_optimal</h3>
+					</td>
+					<td>
+						<div class="champProduitConstruisable">
+							<input type="number" name="lot_optimal" [(ngModel)]="p.lot_optimal">
+							<label><i class="fas fa-ball-pile"></i></label>
+
+						</div>
+					</td>
+					
+				</tr>
+				<tr>
+					<td class="txtProduitConst">
+						<h3 class="formtxt" id="nommachine">Nom de machine</h3>
+					</td>
+					<td>
+						<div class="champProduitConstruisable">
+							<select name="id_machine" id="" ngModel>
+								<option value="">--Nom de machine--</option>
+								<option *ngFor="let m of machine" [ngValue]="m.id">{{m.nom_machine}}</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<div class="btnProduitConstruisable">
+				<div>
+					<button  type="submit" class="buttonpointeff"  id="btncpointeff" >
+						<span class="button-82-edgec"></span>
+						<span class="button-82-frontc text ">
+							<span class="fa fa-solid fa-plus"></span>
+						Modifier
+						</span>
+					</button>
+				</div>
+				<div>
+					<a href=""  class="buttonpointeff" role="button"  id="btnapointeff">
+						<span class="button-82-edgea"></span>
+						<span class="button-82-fronta text ">
+							<span class="fa fa-solid fa-ban"></span>
+						Annuler
+						</span>
+					</a>
+				</div>
+		  </div>
+		</div>
+	</form>
+</div>
+
